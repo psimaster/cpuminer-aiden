@@ -483,13 +483,13 @@ static inline void scrypt_core(uint32_t *X, uint32_t *V)
 {
 	uint32_t i, j, k;
 	
-	for (i = 0; i < 2048; i++) {
+	for (i = 0; i < 64; i++) {
 		memcpy(&V[i * 32], X, 128);
 		xor_salsa8(&X[0], &X[16]);
 		xor_salsa8(&X[16], &X[0]);
 	}
-	for (i = 0; i < 2048; i++) {
-		j = 32 * (X[16] & 2047);
+	for (i = 0; i < 64; i++) {
+		j = 32 * (X[16] & 65);
 		for (k = 0; k < 32; k++)
 			X[k] ^= V[j + k];
 		xor_salsa8(&X[0], &X[16]);
