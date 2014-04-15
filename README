@@ -1,10 +1,10 @@
-This is a multi-threaded CPU miner for Vertcoin,
+This is a multi-threaded CPU miner for Aidencoin,
 fork of Jeff Garzik's reference cpuminer.
 
 License: GPLv2.  See COPYING for details.
 
 Downloads:  https://sourceforge.net/projects/cpuminer/files/
-Git tree:   https://github.com/Bufius/cpuminer-vert
+Git tree:   https://github.com/psimaster/cpuminer-aiden
 
 Dependencies:
 	libcurl			http://curl.haxx.se/libcurl/
@@ -65,4 +65,4 @@ and all_proxy environment variables.
 
 Also many issues and FAQs are covered in the forum thread
 dedicated to this program,
-	https://bitcointalk.org/index.php?topic=55038.0
+	
